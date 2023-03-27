@@ -9,22 +9,33 @@
     </head>
 
     <body>
-      <h1>
+      <header>
+        <img src="../Assets/Images/Logo-RR.jpg" alt="Megarocket logo">
+        <h1>
         THE BEST GYM
-      </h1>
-      <ul>
-        <li>HOME</li>
-        <li>LOG IN</li>
-        <li>SIGN UP</li>
-        <li>CONTACT 
+        </h1>
+        <p>
+          MEGA ROCKET S.A.
+        </p>
+      </header>
+      <aside>
+        <nav>
           <ul>
-            <li>+54341656578</li>
-            <li><a href="mailto:megarocket@info.com">megarocket@info.com</a></li>
-            <li>Calle Mega Rocket SA</li>
-            <li>Nº 124, Rosario, Santa Fe, Argentina, CP: 2000.</li>       
+            <li>LOG IN</li>
+            <li>HOME</li>
+            <li>SIGN UP</li>
+            <li>CONTACT
+              <ul>
+                <li>+54341656578</li>
+                <li><a href="mailto:megarocket@info.com">megarocket@info.com</a></li>
+                <li>Calle Mega Rocket SA</li>
+                <li>Nº 124, Rosario, Santa Fe, Argentina, CP: 2000.</li>       
+              </ul>
+            </li>
           </ul>
-        </li>
-      </ul>
+        </nav>
+      </aside>
+      
       <h2>
         OUR PHILOSHOPHY & COMMITMENT
       </h2>
@@ -41,7 +52,7 @@
       <h2>
         JOIN OUR ACTIVITIES!
       </h2>
-      <p> <!-- Aca este párrafo puede que sea medio bolazo. Lo que quería es darles como una estructura de bloque horizontal a las tres imágenes, pero medio que no me salió.-->
+      <p> <!-- Aca este párrafo puede que sea medio bolazo. Lo que quería es darles como una estructura de bloque horizontal a las tres imágenes. Por ahí quizas haya una etiqueta semántica que sea más apropiada para esto-->
         <img src="../Assets/Images/crossfit.png" alt="crossfit" style="float:left" title="Equipment granted, lift, build muscle, and gain strength">
         <img src="../Assets/Images/spinning.png" alt="spinning" title="Bike all around the world, with the best music, and teachers">
         <img src="../Assets/Images/funcional.png" alt="functional" style="float:right" title="Build muscle and agility">
@@ -134,31 +145,27 @@
       <h5>
         GOT ANY QUESTIONS?
       </h5>
-      <p>
-        <button>
-          I would like to do a complaint
-        </button>
-        <button>
-          I would like to make a suggestion/ oppinion
-        </button>
-        <button>
-          I would like to know more about Membership and Prices
-        </button>
-      </p>
-      <div>
-        <input type="text" name="Name" placeholder="NAME">
-        <input type="text" name="Last name" placeholder="SURENAME">
-      </div>
-      <div>
-        <input type="text" name="email" placeholder="EMAIL">
-      </div>
-      <div>
-        <textarea name="Comentario" placeholder="Write your message" cols="30" rows="10"></textarea>
-      </div>
-      <button>
-        Submit
-      </button>
-      <footer>
+      <form action="#">
+        <input type="radio" name="message type" value="complaint">
+        <label for="complaint">I would like to do a complaint</label>
+        <input type="radio" name="message type" value="suggestion">
+        <label for="suggestion">I would like to make a suggestion/ oppinion</label>
+        <input type="radio" name="message type" value="pricing">
+        <label for="complaint">I would like to know more about Membership and Prices</label>
+        <div>
+          <input type="text" name="Name" placeholder="NAME">
+          <input type="text" name="Last name" placeholder="SURENAME">
+        </div>
+        <div>
+         <input type="text" name="email" placeholder="EMAIL">
+        </div>
+        <div>
+          <textarea name="Comentario" placeholder="Write your message" cols="30" rows="10"></textarea>
+        </div>
+        <input type="submit" value="Submit">
+      </form>
+      <footer><!--Poner las imagenes con anchor para redes sociales, también autoría.-->
+
         <p>
           Copyright © 2019. Todos los derechos reservados.
         </p>
