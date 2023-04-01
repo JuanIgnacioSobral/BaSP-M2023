@@ -1,0 +1,55 @@
+* {
+    font-family: "roboto", sans-serif;
+}
+a {
+    text-decoration: none
+}
+.headerZ {
+    color:#373867;
+    z-index: 2;
+}
+.margin{
+    margin-left: 271px;
+}
+.sidebar{
+    width: 271px;
+    height: 100%;
+    position:fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+aside {
+    background-color: #4E4D7F;
+}
+.sidebar p {
+    margin-bottom: 10px;
+    margin-left: 102px;
+    margin-right: 102px;
+}
+a.sidebarlink {
+    font-weight: bold;
+    color:white
+}
+.sidebar a:hover{
+    color: rgb(23, 55, 23)
+}
+.contacto {
+    margin: 297px 0px 0px 0px;
+    padding: 0px;
+    color:white;
+}
+.images {
+    width: 970px;
+    height: 1500px;
+    margin: 0 auto
+}
+.images img{
+    width: 481px;
+    height: 491px
+}
+.center {
+    margin: 0 auto;
+    width:66.6%;
+    border: 1px solid #000
+}
