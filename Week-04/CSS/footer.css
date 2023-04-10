@@ -1,0 +1,23 @@
+
+
+
+
+
+
+
+/*Estilos de mobile*/
+
+@media(min-width: 390px) and (max-width: 600px){
+    
+}
+/*Estilos de tablet*/
+
+@media(min-width: 601px) and (max-width: 1024px) {
+    
+}
+
+/*Estilos de escritorio*/
+
+@media(min-width: 1025px) {
+    
+}

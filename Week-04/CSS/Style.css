@@ -1,0 +1,394 @@
+body {
+    font-family: "roboto", sans-serif;
+    background-color: #f4f4f4;
+}
+
+a {
+    text-decoration: none
+}
+
+h1 {
+    font-size: 40px;
+}
+
+.margin{
+    margin-left: 271px;
+}
+aside{
+    width: 271px;
+    height: 7764px;
+    float: left;
+    z-index: 1;
+    background-color: #4E4D7F;
+    font-family: "roboto", sans-serif;
+}
+.sidebar {
+    width: 270px;
+    position: sticky;
+    top: 217px;
+    margin-top: 80px;
+    display: inline-block;
+    color:white;
+}
+.sidebar p {
+    margin-bottom: 50px;
+    margin-left: 10px;
+    margin-right: 10px;
+    text-align: center;
+}
+a.sidebarlink {
+    font-weight: bold;
+    color:white;
+    font-size: 23px;
+}
+.sidebar a:hover{
+    color: rgb(23, 55, 23)
+}
+.contact {
+    text-align: center;
+    margin-top: 127px;
+}
+.contact a{
+    color: white;
+}
+.contact p{
+    margin-bottom: 7px;
+}
+.section1 {
+    text-align: center;
+    background-image: url(../../Assets/Images/blue-gym-banner.png);
+    height: 624px;
+    color: white;
+}
+.section1 h2{
+    font-size: 60px;
+    font-weight: bold;
+    padding-top: 178px;
+}
+.section1 p{
+    margin: 64px 323px 154px 324px;
+    font-size: 20px;
+}
+.section2 {
+    color: #373867;
+    font-size: 40px;
+    font-weight: bold;
+    display: inline-block;
+}
+.section2 h2{
+    margin: 122px 187px -150px 38px;
+}
+.section2 p {
+    margin-left: 46px;
+    margin-top: 56px;
+    margin-bottom: 108px;
+    width: 591px;
+    display: inline-block;
+}
+.section2 img {
+    width: 577px;
+    margin-top: 45px;
+}
+.section3 {
+    margin-top: 46px;
+}
+.section3 h2 {
+    background-color: #373867;
+    color: white;
+    font-size: 40px;
+    width: 700px;
+    height: 112px;
+    padding: 32px 111px 33px 179px;
+    display: inline;
+}
+.images {
+    width: 966px;
+    height: 1500px;
+    margin: 108px auto 0px auto;
+}
+.images img{
+    width: 481px;
+    height: 491px
+}
+.center {
+    margin: 0 auto;
+    width:66.6%;
+    border: 1px solid #000
+}
+.section4 {
+    margin-top: 108px;
+    background-color: #979797;
+    height: 924px;
+}
+.section4 h2 {
+    background-color: #373867;
+    color: white;
+    font-size: 40px;
+    width: 700px;
+    height: 112px;
+    padding: 32px 111px 33px 179px;
+    display: inline;
+}
+.thirdGlobal {
+    margin-top: 108px;
+    height: 1155px;
+}
+.thirdGlobal ul {
+    list-style-image: url(../Images/Vector\ 20.png);
+    width: 325px;
+    padding: 0px 4px 0px 40px;
+}
+.thirdImages{
+    width: 1152px;
+    height: 326px;
+    margin-left: 42px;
+}
+.thirdImages img {
+    display: inline-block;
+    width: 33%;
+}
+.rectangle{
+    width: 325px;
+    height: 46px;
+    background-color:#AFAFC2;
+}
+.thirdtext1{
+    width: 325px;
+    display: inline-block;
+    margin-left: 77px;
+    margin-top: -34px;
+    position: absolute;
+}
+.thirdtext2{
+    width: 325px;
+    display: inline-block;
+    margin-left: 459px;
+    margin-top: -34px;
+    position: absolute;
+}
+.thirdtext3{
+    width: 325px;
+    display: inline-block;
+    margin-left: 838px;
+    margin-top: -34px;
+    position: absolute;
+}
+.membership{
+    margin-top: 39px;
+    width: 287px;
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    color: #373867;
+}
+.greentext{
+    color: #AACB9E;
+}
+.thirdtext1, .thirdtext2, .thirdtext3 {
+    background-color: white;
+}
+.membox {
+    text-align: center;
+    padding-top: 17px;
+    margin-top: 50px;
+    width: 325px;
+    height: 79px;
+    border-top: #000;
+    border-style: solid none none none;
+    border-width: 0.7px;
+}
+.greenbutton {
+    width: 100%;
+    height: 72px;
+    color: white;
+    font-family: "Roboto", sans-serif;
+    font-weight: bold;
+    background-color: #49A37B;
+    border: none;
+    font-size: 30px;
+}
+.section5 {
+    margin-top: 160px;
+}
+.section5 h2, .section5 p {
+    display: inline-block;
+}
+.section5 h2 {
+    font-size: 65px;
+    width: 495px;
+    font-weight: bold;
+}
+.section5 p {
+    font-size: 32px;
+    margin-top: 19px;
+}
+.section5 img {
+    display: inline-block;
+    width: 320px;
+    height: 320px;
+    margin-top: 69px;
+    margin-left: 136px;
+}
+.section51 {
+    width: 1244px;
+    height: 508px;
+    background-color: #AACE9B;
+}
+.section52 {
+    width: 1244px;
+    height: 508px;
+    background-color: #373867;
+}
+.section53 {
+    width: 1244px;
+    height: 508px;
+    background-color: white;
+}
+.section54 {
+    width: 1244px;
+    height: 508px;
+    background-color: #919194;
+}
+.section511 {
+    display: inline-block;
+    width: 530px;
+    margin-top: 91px;
+    margin-left: 118px;
+}
+.section521 {
+    display: inline-block;
+    width: 530px;
+    margin-top: 91px;
+    margin-left: 118px;
+}
+.section531 {
+    display: inline-block;
+    width: 530px;
+    margin-top: 91px;
+    margin-left: 118px;
+}
+.section541 {
+    display: inline-block;
+    width: 530px;
+    margin-top: 91px;
+    margin-left: 118px;
+}
+.section511 h2, .section511 p, .section521 h2, .section521 p {
+    color: white;
+}
+.section531 h2, .section531 p, .section541 h2, .section541 p {
+    color: #373867;
+}
+.section6{
+    background-color: #979797;
+    padding: 100px 0px;
+}
+form {
+    width: 665px;
+    height: 694px;
+    background-color: white;
+    border-radius: 20px;
+    margin: 290px auto;
+}
+form h3 {
+    font-size: 32px;
+    color: #373867;
+    font-weight: bolder;
+    text-align: center;
+    padding-top: 36px;
+    margin-bottom: 27px;
+}
+.input1, .input2, .input3 {
+    border-radius: 5px;
+    display: inline-block;
+    margin-left: 45px;
+    font-size: 14px;
+    color: #373867;
+    font-weight: bold;
+    border-color: #373867;
+    border-style: solid;
+    border-width: 1.3px;
+}
+.input1{
+    width: 223px;
+    height: 21px;
+    margin-bottom: 17px;
+}
+.input2{
+    width: 307px;
+    height: 21px;
+}
+.input3{
+    width: 392px;
+    height: 21px;
+    margin-bottom: 63px;
+    margin-left: 113px;
+}
+.name {
+    margin-left: 77px;
+    margin-bottom: 55px
+}
+.name input {
+    margin-left: 39px;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 4px;
+    border-color: #373867;
+    width: 197px;
+}
+.email {
+    margin-left: 113px;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 4px;
+    border-color: #373867;
+    width: 439px;
+    margin-bottom: 55px
+}
+.comentary {
+    margin-left: 113px;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 4px;
+    border-color: #373867;
+    width: 439px;
+    height: 139px;
+    resize: none;
+    box-sizing: border-box;
+}
+.greenbutton2{
+    margin-top: 43px;
+    margin-left: 254px;
+    width: 156px;
+    height: 35px;
+    background-color: #AACE9B;
+    border-style: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+footer {
+    height: 196px;
+}
+.iconarea{
+    height: 139px;
+}
+.icon1, .icon2{
+    display: inline-block;
+    margin-top: 43px;
+    margin-bottom: 43px;
+}
+.icon1 {
+    margin-left: 290px;
+}
+.icon2 {
+    margin-left: 145px;
+}
+.ending {
+    background-color: #D9D9D9;
+    margin-left: -271px;
+    height: 57px;
+}
+.ending p {
+    text-align: center;
+    margin-top: 7px;
+}
