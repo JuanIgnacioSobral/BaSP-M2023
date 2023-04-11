@@ -1,3 +1,64 @@
+main {
+    display: flex;
+}
+
+.contentcontainer {
+    width: 88%;
+}
+
+aside{
+    width: 17.923%;
+    float: left;
+    background-color: #4E4D7F;
+    font-family: "roboto", sans-serif;
+    order: -1;
+}
+
+.sidebar {
+    width: 270px;
+    position: sticky;
+    top: 217px;
+    margin-top: 80px;
+    display: inline-block;
+    color:white;
+}
+
+.sidebar p {
+    margin-bottom: 50px;
+    margin-left: 10px;
+    margin-right: 10px;
+    text-align: center;
+}
+
+a.sidebarlink {
+    font-weight: bold;
+    color:white;
+    font-size: 23px;
+}
+
+.sidebar a:hover{
+    color: rgb(23, 55, 23)
+}
+
+.contact {
+    text-align: center;
+    margin-top: 127px;
+}
+
+.contact a{
+    color: white;
+}
+
+.contact p{
+    margin-bottom: 7px;
+}
+
+.center {
+    margin: 0 auto;
+    width:66.6%;
+    border: 1px solid #000
+}
+
 .banner {
     text-align: center;
     background-image: url(../../Assets/Images/blue-gym-banner.png);
@@ -11,6 +72,7 @@
     justify-content: center;
     row-gap: 25px;
 }
+
 .banner h2{
     font-size: 19px;
     font-weight: bold;
@@ -19,7 +81,6 @@
     font-size: 10px;
     margin: 0 25%;
 }
-
 
 .why {
     color: #373867;
@@ -235,7 +296,94 @@
     margin-bottom: 75px;
 }
 
+.questions{
+    padding: 100px 0px;
+}
 
+form {
+    background-color: white;
+    width: 80%;
+    height: fit-content;
+    padding: 20px 0px 20px 20px;
+    margin: 150px auto;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    row-gap: 32px;
+}
+
+form h3 {
+    font-size: 20px;
+    color: #373867;
+    font-weight: bolder;
+    text-align: center;
+    align-self: center;
+}
+
+.pointGroup{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    row-gap: 32px;
+}
+
+.point {
+    border-radius: 5px;
+    font-size: 8px;
+    color: #373867;
+    font-weight: bold;
+    border-color: #373867;
+    border-style: solid;
+    border-width: 1.3px;
+    width: fit-content;
+    height: fit-content;
+    padding-right: 5px;
+    padding-bottom: 3px;
+}
+
+.name {
+    display: flex;
+    column-gap: 33px;
+    width: 100%;
+    padding-right: 10px;
+}
+
+.name input {
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 4px;
+    border-color: #373867;
+    width: 25%;
+}
+
+.email {
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 4px;
+    border-color: #373867;
+    width: 80%;
+}
+
+.comentary {
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 4px;
+    border-color: #373867;
+    width: 80%;
+    height: 139px;
+    resize: none;
+    box-sizing: border-box;
+}
+.greenbutton2{
+    width: 30%;
+    height: 10%;
+    background-color: #AACE9B;
+    border-style: none;
+    border-radius: 5px;
+    font-weight: bold;
+    align-self: center;
+}
 
 /*Estilos de mobile*/
 
@@ -309,4 +457,13 @@
         margin-left: 136px;
         margin-bottom: 75px;
     }
+
+    form h3 {
+        font-size: 32px;
+    }
+
+    .input1, .input2, .input3 {
+        font-size: 14px;
+    }
+
 }
