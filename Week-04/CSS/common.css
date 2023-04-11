@@ -3,6 +3,13 @@ body {
     background-color: #f4f4f4;
 }
 
+
+
+/* USAR COSAS COMO VH VL QUE SON VIEWPORT HEIGHT Y LENGTH*/
+
+
+
+
 a {
     text-decoration: none
 }
@@ -11,18 +18,22 @@ h1 {
     font-size: 40px;
 }
 
-.margin{
-    margin-left: 271px;
-    width: fit-content;
+main {
+    display: flex;
 }
+
+.contentcontainer {
+    width: 88%;
+}
+
 aside{
-    width: 271px;
-    height: 7764px;
+    width: 17.923%;
     float: left;
-    z-index: 1;
     background-color: #4E4D7F;
     font-family: "roboto", sans-serif;
+    order: -1;
 }
+
 .sidebar {
     width: 270px;
     position: sticky;
@@ -55,133 +66,32 @@ a.sidebarlink {
 .contact p{
     margin-bottom: 7px;
 }
-.section1 {
-    text-align: center;
-    background-image: url(../../Assets/Images/blue-gym-banner.png);
-    height: 624px;
-    color: white;
-}
-.section1 h2{
-    font-size: 60px;
-    font-weight: bold;
-    padding-top: 178px;
-}
-.section1 p{
-    margin: 64px 323px 154px 324px;
-    font-size: 20px;
-}
-.section2 {
-    color: #373867;
-    font-size: 40px;
-    font-weight: bold;
-    display: inline-block;
-}
-.section2 h2{
-    margin: 122px 187px -150px 38px;
-}
-.section2 p {
-    margin-left: 46px;
-    margin-top: 56px;
-    margin-bottom: 108px;
-    width: 591px;
-    display: inline-block;
-}
-.section2 img {
-    width: 577px;
-    margin-top: 45px;
-}
-.section3 {
-    margin-top: 46px;
-}
-.section3 h2 {
-    background-color: #373867;
-    color: white;
-    font-size: 40px;
-    width: 700px;
-    height: 112px;
-    padding: 32px 111px 33px 179px;
-    display: inline;
-}
-.images {
-    width: 966px;
-    height: 1500px;
-    margin: 108px auto 0px auto;
-}
-.images img{
-    width: 481px;
-    height: 491px
-}
+
 .center {
     margin: 0 auto;
     width:66.6%;
     border: 1px solid #000
 }
-.section4 {
-    margin-top: 108px;
-    background-color: #979797;
-    height: 924px;
-}
-.section4 h2 {
-    background-color: #373867;
-    color: white;
-    font-size: 40px;
-    width: 700px;
-    height: 112px;
-    padding: 32px 111px 33px 179px;
-    display: inline;
-}
-.thirdGlobal {
-    margin-top: 108px;
-    height: 1155px;
-}
-.thirdGlobal ul {
-    list-style-image: url(../Images/Vector\ 20.png);
-    width: 325px;
-    padding: 0px 4px 0px 40px;
-}
+
+/* .thirdGlobal 
+
 .thirdImages{
     width: 1152px;
     height: 326px;
     margin-left: 42px;
 }
-.thirdImages img {
-    display: inline-block;
-    width: 33%;
-}
-.rectangle{
-    width: 325px;
-    height: 46px;
-    background-color:#AFAFC2;
-}
+
+
 .thirdtext1{
     width: 325px;
-    display: inline-block;
-    margin-left: 77px;
-    margin-top: -34px;
-    position: absolute;
 }
 .thirdtext2{
     width: 325px;
-    display: inline-block;
-    margin-left: 459px;
-    margin-top: -34px;
-    position: absolute;
 }
 .thirdtext3{
     width: 325px;
-    display: inline-block;
-    margin-left: 838px;
-    margin-top: -34px;
-    position: absolute;
 }
-.membership{
-    margin-top: 39px;
-    width: 287px;
-    font-size: 30px;
-    font-weight: bold;
-    text-align: center;
-    color: #373867;
-}
+
 .greentext{
     color: #AACB9E;
 }
@@ -207,7 +117,7 @@ a.sidebarlink {
     background-color: #49A37B;
     border: none;
     font-size: 30px;
-}
+} */
 .section5 {
     margin-top: 160px;
 }
@@ -376,16 +286,25 @@ form h3 {
 /*Estilos de mobile*/
 
 @media(min-width: 390px) and (max-width: 600px){
-    
+    .contentcontainer {
+        width: 100%;
+    }
 }
 /*Estilos de tablet*/
 
 @media(min-width: 601px) and (max-width: 1024px) {
-    
+    aside {
+        height: 100%;
+        min-width: 164px;
+    }
 }
 
 /*Estilos de escritorio*/
 
 @media(min-width: 1025px) {
-    
+
+    aside{
+        height: 7764px;
+    }
+
 }

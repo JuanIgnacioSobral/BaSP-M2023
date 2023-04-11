@@ -5,19 +5,14 @@ footer {
     flex-direction: column;
     justify-content: center;
 }
+
 .icons{
     height: 139px;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
 }
-.icon1, .icon2{
-    display: inline-block;
-}
-.icon1 {
-}
-.icon2 {
-}
+
 .ending {
     background-color: #D9D9D9;
     height: 57px;
@@ -26,6 +21,7 @@ footer {
     justify-content: center;
     align-items: center;
 }
+
 .ending p {
     margin-top: 7px;
 }
