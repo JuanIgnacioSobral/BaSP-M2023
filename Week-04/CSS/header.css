@@ -54,13 +54,29 @@ header img {
 /*Estilos de escritorio*/
 
 @media(min-width: 1025px) {
-    .hamburger {
-        display: none;
-    }
+    
     header {
         justify-content: flex-start;
     }
     header div {
         margin: auto;
+    }
+    
+    header h1{
+        font-size: 40px;
+    }
+    
+    header p{
+        font-size: 14px;
+    }
+    
+    header img {
+        margin-left: 3.04%;
+        height: 115px;
+        width: 90px;
+    }
+
+    .hamburger {
+        display: none;
     }
 }

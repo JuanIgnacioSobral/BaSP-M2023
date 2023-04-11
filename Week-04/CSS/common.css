@@ -11,29 +11,25 @@ h1 {
     font-size: 40px;
 }
 
+.contentcontainer {
+    width: 100%;
+}
+
 
 /*Estilos de mobile*/
 
 @media(min-width: 390px) and (max-width: 600px){
-    .contentcontainer {
-        width: 100%;
-    }
 }
 /*Estilos de tablet*/
 
 @media(min-width: 601px) and (max-width: 1024px) {
-    aside {
-        height: 100%;
-        min-width: 164px;
-    }
 }
 
 /*Estilos de escritorio*/
 
 @media(min-width: 1025px) {
 
-    aside{
-        height: 7764px;
+    .contentcontainer {
+        width: 88%;
     }
-
 }

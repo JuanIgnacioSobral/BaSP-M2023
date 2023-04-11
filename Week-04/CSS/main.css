@@ -2,63 +2,6 @@ main {
     display: flex;
 }
 
-.contentcontainer {
-    width: 88%;
-}
-
-aside{
-    width: 17.923%;
-    float: left;
-    background-color: #4E4D7F;
-    font-family: "roboto", sans-serif;
-    order: -1;
-}
-
-.sidebar {
-    width: 270px;
-    position: sticky;
-    top: 217px;
-    margin-top: 80px;
-    display: inline-block;
-    color:white;
-}
-
-.sidebar p {
-    margin-bottom: 50px;
-    margin-left: 10px;
-    margin-right: 10px;
-    text-align: center;
-}
-
-a.sidebarlink {
-    font-weight: bold;
-    color:white;
-    font-size: 23px;
-}
-
-.sidebar a:hover{
-    color: rgb(23, 55, 23)
-}
-
-.contact {
-    text-align: center;
-    margin-top: 127px;
-}
-
-.contact a{
-    color: white;
-}
-
-.contact p{
-    margin-bottom: 7px;
-}
-
-.center {
-    margin: 0 auto;
-    width:66.6%;
-    border: 1px solid #000
-}
-
 .banner {
     text-align: center;
     background-image: url(../../Assets/Images/blue-gym-banner.png);
@@ -101,10 +44,12 @@ a.sidebarlink {
 .why-text h2{
     font-size: 20;
 }
+
 .why-text p {
     font-size: 15px;
     width: 309px;
 }
+
 .why img {
     width: 577px;
 }
@@ -402,14 +347,212 @@ form h3 {
 /*Estilos de tablet*/
 
 @media(min-width: 601px) and (max-width: 1024px) {
+
     aside {
         display: none;
+    }
+    
+    .why-text {
+        margin: 14% 0;
+        display: flex;
+        row-gap: 3vh;
+        flex-direction: column;
+        justify-content: center;
+    }
+    
+    .why-text h2{
+        font-size: 2em;
+    }
+    
+    .why-text p {
+        font-size: 25px;
+        width: 50vw;
+    }
+    
+    .why img {
+        width: 577px;
+    }
+
+    .why img {
+        width: 276px;
+    }
+
+    .join-images {
+        width: 100%;
+        height: fit-content;
+        margin: 120px auto;
+        flex-direction: row;
+        row-gap: 0px;
+        flex-wrap: wrap;
+    }
+    
+    .join-images img{
+        width: 32vw;
+        max-width: 270px;
+    }
+
+    .membItem {
+        height: 869px;
+    }
+
+    .membImage {
+        width: 573px;
+        height: 485px;
+    }
+    
+    .membDescription h3 {
+        font-size: 40px;
+    }
+
+    .membDescription ul {
+        font-size: 20px;
+    }
+
+    .membox {
+        font-size: 20px;
+        padding-top: 25px;
+    }
+
+    .universe {
+        margin-top: 560px;
+    }
+
+    .universeGlobal1, .universeGlobal2, .universeGlobal3, .universeGlobal4 {
+        flex-direction: row;
+        justify-content: space-around;
+        padding-bottom: 30px;
+    }
+
+    .universeText {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-left: 5vw;
+    }
+    .universeText h2 {
+        font-size: 68px;
+        width: fit-content;
+        font-weight: bold;
+    }
+    
+    .universeText p {
+        font-size: 32px;
+        margin-top: 19px;
+    }
+    
+    .universe img {
+        width: 270px;
+        height: 270px;
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+
+    form{
+        align-items: center;
+    }
+
+    form h3{
+        font-size: 32px;
+    }
+
+    .pointGroup {
+        width: 80%;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        font-size: 14px;
+    }
+
+    .name {
+        width: 80%;
+        justify-content: space-evenly;
+    }
+
+    .name input {
+        width: 45%;
     }
 }
 
 /*Estilos de escritorio*/
 
 @media(min-width: 1025px) {
+
+    aside{
+        height: 8230px;
+        width: 17.923%;
+        background-color: #4E4D7F;
+        font-family: "roboto", sans-serif;
+        order: -1;
+    }
+    
+    .sidebar {
+        width: 100%;
+        position: sticky;
+        top: 217px;
+        margin-top: 80px;
+        display: inline-block;
+        color:white;
+    }
+    
+    .sidebar p {
+        margin-bottom: 50px;
+        margin-left: 10px;
+        margin-right: 10px;
+        text-align: center;
+        font-size: 23px;
+    }
+    
+    a.sidebarlink {
+        font-weight: bold;
+        color:white;
+    }
+    
+    .sidebar a:hover{
+        color: rgb(23, 55, 23)
+    }
+    
+    .contact {
+        text-align: center;
+        margin-top: 127px;
+    }
+    
+    .contact a{
+        color: white;
+    }
+    
+    .contact p{
+        margin-bottom: 7px;
+    }
+    
+    .center {
+        margin: 0 auto;
+        width:66.6%;
+        border: 1px solid #000
+    }
+    
+    .banner {
+        text-align: center;
+        background-image: url(../../Assets/Images/blue-gym-banner.png);
+        background-size: cover;
+        background-position: 50%;
+        height: 624px;
+        width: 85vw;
+        color: white;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        row-gap: 25px;
+    }
+    
+    .banner h2{
+        font-size: 60px;
+        font-weight: bold;
+    }
+    .banner p{
+        font-size: 20px;
+        margin: 0 25%;
+    }
+
     .join h2 {
         font-size: 40px;
         padding: 32px 111px 33px 179px;
