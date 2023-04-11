@@ -171,7 +171,6 @@ main {
     margin-top: 160px;
 }
 
-
 .universeGlobal1 {
     padding-top: 30px;
     width: 100%;
@@ -518,12 +517,14 @@ form h3 {
     
     .contact a{
         color: white;
+        font-size: 15px;
     }
     
     .contact p{
         margin-bottom: 7px;
+        font-size: 15px;
     }
-    
+
     .center {
         margin: 0 auto;
         width:66.6%;
@@ -553,21 +554,34 @@ form h3 {
         margin: 0 25%;
     }
 
+    .why-text {
+        row-gap: 3vh;
+    }
+
+    .why-text h2, .why-text p {
+        font-size: 40px;
+        width: 483px;
+        padding-left: 25px;
+    }
+
     .join h2 {
         font-size: 40px;
         padding: 32px 111px 33px 179px;
         display: inline;
     }
 
-    .join-images img{
-        width: 481px;
-        height: 491px
-    }
-
     .join-images {
         width: 966px;
         height: 1500px;
         margin: 108px auto 0px auto;
+        flex-direction: row;
+        flex-wrap: wrap;
+        row-gap: 0px;
+    }
+
+    .join-images img {
+        width: 483px;
+        height: 483px;
     }
 
     .membership {
@@ -582,6 +596,26 @@ form h3 {
         display: inline;
     }
 
+    .membGlobal {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .membImage {
+        width: 23vw;
+        height: 23vw;
+    }
+
+    .membDescription {
+        position: relative;
+        width: 17vw;
+        margin-top: -50px;
+    }
+
+    .membox {
+        padding-top: 25px;
+    }
+
     .universe h2 {
         font-size: 65px;
         width: 495px;
@@ -591,6 +625,13 @@ form h3 {
     .universe p {
         font-size: 32px;
         margin-top: 19px;
+        width: 450px;
+    }
+
+    .universeGlobal1, .universeGlobal2, .universeGlobal3, .universeGlobal4 {
+        flex-direction: row;
+        justify-content: space-evenly;
+        padding-bottom: 30px;
     }
     
     .universe img {
@@ -609,4 +650,52 @@ form h3 {
         font-size: 14px;
     }
 
+    .questions{
+        padding: 100px 0px;
+    }
+    
+    form {
+        width: 68%;
+    }
+    
+    form h3 {
+        font-size: 32px;
+    }
+    
+    .pointGroup{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    .point {
+        font-size: 14px;
+        border-width: 1.3px;
+        padding-right: 10px;
+        padding-bottom: 6px;
+        margin: 0 17px;
+    }
+    
+    .name {
+        display: flex;
+        column-gap: 33px;
+        width: 100%;
+        padding-right: 10px;
+    }
+    
+    .name input {
+        width: 43%;
+    }
+    
+    .email {
+        width: 90%;
+    }
+    
+    .comentary {
+        width: 90%;
+    }
+    .greenbutton2{
+        height: 50px;
+    }
 }
