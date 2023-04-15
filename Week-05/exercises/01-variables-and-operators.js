@@ -1,4 +1,4 @@
-console.log("EXCERCISE 1 VARIABLES AND OPERATORS");
+console.log("EXCERCISE 1: VARIABLES AND OPERATORS");
 
 
 // 1.a: Crear dos variables numéricas y utilizar el operador suma para guardar el valor de la suma de ambos números en una 3er variable.
