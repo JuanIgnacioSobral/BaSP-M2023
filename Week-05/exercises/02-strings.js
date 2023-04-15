@@ -52,4 +52,3 @@ var subsMinus1 = dosPalabras.substring(1, 11).toLowerCase();
 var subsMinus2 = dosPalabras.substring(12, 22).toLowerCase();
 
 console.log(subsMayus1+subsMinus1+subsMayus2+subsMinus2);
-

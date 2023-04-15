@@ -1,0 +1,1 @@
+console.log("EXCERCISE 3: ARRAYS");
