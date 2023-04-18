@@ -2,11 +2,12 @@
 
 ## Mega rocket gym readme
 
-On the present repository we will find 5 main folders:
+On the present [repository] (https://juanignaciosobral.github.io/BaSP-M2023/) we will find 5 main folders:
 
 - Week-02
 - Week-03
 - Week-04
+- Week-05
 - Assets
 - CSS
 
@@ -25,6 +26,10 @@ This folder contains the same HTML file as Week-02 ([index.html](https://juanign
 
 This folder contains yet another HTML file called [index.html](https://juanignaciosobral.github.io/BaSP-M2023/Week-04/index.html) that also incorporates some structure corrections made by tutors, as every week prior. This week's objective was also to recreate the aftermentioned figma document. However, this time we used flexbox in order to allow a responsive design for mobile and tablet devices, as well as desktop. We also differed from last week by using multiple CSS files for the many sections of the page instead of a single styles.css file.
 
+## Week-04
+
+This folder contains it's weekly [index.html](https://juanignaciosobral.github.io/BaSP-M2023/Week-05/index.html) file, but this time it comes with a twist. Instead of last week's CSS folder we will now find a Javascript folder, which contains 6 files. Each of those respective files is named after the main theme of the excercises that it contains. Therefore, this week's main assignment was to solve the excercises and link them into this week's index.html file.
+
 ## Assets
 
 This folder currently contains another folder named images, which at the same time contains multiple images used on the making of the web page for Mega rocket gym.
@@ -35,5 +40,4 @@ From week 4 onwards, each weekly folder will contain a CSS folder, which will al
 
 ## Future releases
 
-On future releases we will incorporate some javascript aspects to update index.html, in order to make the page more interactive.
-We are also planing on creating the entire web service for the gym, which will include multiple user type pages, as well as a sign in and log in function.
+On future releases we will incorporate some server-user content as well as working with peers via GitHub.
