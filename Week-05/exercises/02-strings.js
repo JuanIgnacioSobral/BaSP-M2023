@@ -43,8 +43,7 @@ console.log("Excercise 2.f");
 
 var dosPalabras = "murcielago iguanodonte"
 console.log(dosPalabras.length);
-console.log(dosPalabras.indexOf("m"))
-console.log(dosPalabras.indexOf("i", 10)) //Estos console logs son para saber dónde es que tengo que meter toUppercase. No son la respuesta del ejercicio.
+console.log(dosPalabras.indexOf(" "));
 
 var subsMayus1 = dosPalabras.substring(0, 1).toUpperCase();
 var subsMayus2 = dosPalabras.substring(11, 12).toUpperCase();
