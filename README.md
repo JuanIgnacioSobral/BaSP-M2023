@@ -26,7 +26,7 @@ This folder contains the same HTML file as Week-02 ([index.html](https://juanign
 
 This folder contains yet another HTML file called [index.html](https://juanignaciosobral.github.io/BaSP-M2023/Week-04/index.html) that also incorporates some structure corrections made by tutors, as every week prior. This week's objective was also to recreate the aftermentioned figma document. However, this time we used flexbox in order to allow a responsive design for mobile and tablet devices, as well as desktop. We also differed from last week by using multiple CSS files for the many sections of the page instead of a single styles.css file.
 
-## Week-04
+## Week-05
 
 This folder contains it's weekly [index.html](https://juanignaciosobral.github.io/BaSP-M2023/Week-05/index.html) file, but this time it comes with a twist. Instead of last week's CSS folder we will now find a Javascript folder, which contains 6 files. Each of those respective files is named after the main theme of the excercises that it contains. Therefore, this week's main assignment was to solve the excercises and link them into this week's index.html file.
 
