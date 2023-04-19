@@ -2,7 +2,7 @@
 
 ## Mega rocket gym readme
 
-On the present [repository] (https://juanignaciosobral.github.io/BaSP-M2023/) we will find 5 main folders:
+On the present [repository](https://juanignaciosobral.github.io/BaSP-M2023/) we will find 5 main folders:
 
 - Week-02
 - Week-03
