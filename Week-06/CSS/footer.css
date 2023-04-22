@@ -1,0 +1,50 @@
+footer {
+    height: 196px;
+    width: inherit;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.icons{
+    background-color: white;
+    height: 139px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.ending {
+    background-color: #D9D9D9;
+    height: 57px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.ending p {
+    margin-top: 7px;
+}
+
+
+
+
+
+
+/*Estilos de mobile*/
+
+@media(min-width: 390px) and (max-width: 600px){
+    
+}
+/*Estilos de tablet*/
+
+@media(min-width: 601px) and (max-width: 1024px) {
+    
+}
+
+/*Estilos de escritorio*/
+
+@media(min-width: 1025px) {
+    
+}
