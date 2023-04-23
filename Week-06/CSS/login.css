@@ -111,14 +111,20 @@ main{
     align-content: center;
 }
 
-.formDiv p{
+.formDiv label{
+    font-weight: bold;
+}
+
+#alert{
     color: #db0000;
     font-weight: bold;
     visibility: hidden;
 }
 
-.formDiv label{
+#alertPassword{
+    color: #db0000;
     font-weight: bold;
+    visibility: hidden;
 }
 
 #button {
