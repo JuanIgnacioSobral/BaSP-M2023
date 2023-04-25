@@ -8,6 +8,7 @@ On the present [repository](https://juanignaciosobral.github.io/BaSP-M2023/) we 
 - Week-03
 - Week-04
 - Week-05
+- Week-06
 - Assets
 - CSS
 
@@ -30,9 +31,13 @@ This folder contains yet another HTML file called [index.html](https://juanignac
 
 This folder contains it's weekly [index.html](https://juanignaciosobral.github.io/BaSP-M2023/Week-05/index.html) file, but this time it comes with a twist. Instead of last week's CSS folder we will now find a Javascript folder, which contains 6 files. Each of those respective files is named after the main theme of the excercises that it contains. Therefore, this week's main assignment was to solve the excercises and link them into this week's index.html file.
 
+## Week-06
+
+This folder provides much more content than previous weeks. Inside Week-06 there are three other folders, which are called, views, CSS and JS. The CSS folder, as it's name sugests, has all the .css files used on this weeks assignment. The folder JS follows the same pattern as the prevous one, containing all the Javascript files, used this week. Last, but not least, the views folder contains three HTML files that show the [landing](https://juanignaciosobral.github.io/BaSP-M2023/Week-05/index.html), [log in](https://juanignaciosobral.github.io/BaSP-M2023/Week-05/login.html) and [sign up](https://juanignaciosobral.github.io/BaSP-M2023/Week-05/sign-up.html) pages for our weekly assignment. As you might have imagined this week's main assignment was to link our different HTML pages, as well as to provide coherent CSS and Javascript for the three of them.
+
 ## Assets
 
-This folder currently contains another folder named images, which at the same time contains multiple images used on the making of the web page for Mega rocket gym.
+This folder currently contains another folder named images, which at the same time contains multiple images used on the making of every weekly assignment.
 
 ## CSS
 
