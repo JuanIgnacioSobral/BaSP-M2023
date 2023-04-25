@@ -26,16 +26,22 @@ emailInput.addEventListener("focus", focusEmailCheck);
 
 var passwordInput = document.getElementById("passwordInput");
 
+function specialCharacterCheck(wordInput) {
+    var specialCharacters = "/[!@#$%^&*()_+\-=\[\]{};':\\|,.<>\/?]+/";
+    for (var i = 0; i < wordInput.length; i++) {
+        if (specialCharacters.indexOf(wordInput.charAt(i)) != -1) {
+            return true;
+        }
+    }
+    return false;
+}
 
 function blurPasswordCheck(){
-    var val = document.querySelector("#passwordInput").value;
-    var regex = /^[A-Za-z0-9]*$/;
-    if (!(regex.test(val))){
-        var alert = document.getElementById("alertPassword");
-        alert.style.visibility = "visible";
+    var passwordText = passwordInput.value;
+    if (specialCharacterCheck(passwordText)){
         passwordInput.classList.add("redBorder");
-    } else {
-        return
+        var alertPassword = document.querySelector("#alertPassword");
+        alertPassword.style.visibility = "visible";
     }
 }
 

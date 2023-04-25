@@ -31,6 +31,16 @@ function numberCheck(wordInput) {
     return false;
 }
 
+function letterNumberFind(wordInput) {
+    var letterNumber = "9876543210aAbBcCdDeEfFgGhHiIjJkKlLmMnNoOpPqQrRsStTuUvVwWxXyYzZ";
+    for (var i = 0; i < wordInput.length; i++) {
+        if (letterNumber.indexOf(wordInput.charAt(i)) != -1) {
+            return true;
+        }
+    }
+    return false;
+}
+
 function spaceFind() {
     var adressText = adressInput.value;
     return adressText.indexOf(" ");
@@ -192,6 +202,10 @@ function blurAdressCheck(){
         var alertAdressLength = document.querySelector("#alertAdressLength");
         alertAdressLength.style.visibility = "visible";
         adressInput.classList.add("redBorder");
+    } if (spaceFind() <= 0 || spaceFind() === adressText.length-1){
+        var alertAdressValid = document.querySelector("#alertAdressValid");
+            alertAdressValid.style.visibility = "visible";
+            adressInput.classList.add("redBorder");
     }
 }
 
@@ -203,4 +217,175 @@ function focusAdressCheck(){
     alertAdressLength.style.visibility="hidden";
     var alertAdressValid = document.querySelector("#alertAdressValid");
     alertAdressValid.style.visibility = "hidden";
+}
+
+var locationInput = document.getElementById("locationInput");
+
+locationInput.addEventListener("blur", blurLocationCheck);
+
+function blurLocationCheck(){
+    var locationText = locationInput.value;
+    if (specialCharacterAndNumberCheck(locationText)&&(locationText.length > 3)) {
+        locationInput.classList.add("redBorder");
+        var alertLocationValid = document.querySelector("#alertLocationValid");
+        alertLocationValid.style.visibility = "visible";
+    } else if ((locationText.length < 3)&& !(specialCharacterAndNumberCheck(locationText))){
+        locationInput.classList.add("redBorder");
+        var alertLocationLength = document.querySelector("#alertLocationLength");
+        alertLocationLength.style.visibility="visible";
+    } else if ((locationText.length < 3)&& specialCharacterAndNumberCheck(locationText)) {
+        locationInput.classList.add("redBorder");
+        var alertLocationLength = document.querySelector("#alertLocationLength");
+        alertLocationLength.style.visibility="visible";
+        var alertLocationValid = document.querySelector("#alertLocationValid");
+        alertLocationValid.style.visibility = "visible";
+    }
+}
+
+locationInput.addEventListener("focus", focusLocationCheck);
+
+function focusLocationCheck(){
+    locationInput.classList.remove("redBorder");
+    var alertLocationLength = document.querySelector("#alertLocationLength");
+    alertLocationLength.style.visibility="hidden";
+    var alertLocationValid = document.querySelector("#alertLocationValid");
+    alertLocationValid.style.visibility = "hidden";
+}
+
+
+var zipCodeInput = document.querySelector("#zipCodeInput");
+
+zipCodeInput.addEventListener("blur", blurZipCodeCheck);
+
+function blurZipCodeCheck(){
+    var zipCodeText = zipCodeInput.value;
+    if ((numberCheck(zipCodeText)) && (zipCodeText.length === 4 || zipCodeText.length === 5)) {
+        zipCodeInput.classList.add("redBorder");
+        var alertZipCodeValid = document.querySelector("#alertZipCodeValid");
+        alertZipCodeValid.style.visibility = "visible";
+    } else if ((!(zipCodeText.length === 4 || zipCodeText.length === 5)) && (!(numberCheck(zipCodeText)))) {
+        zipCodeInput.classList.add("redBorder");
+        var alertZipCodeLength = document.querySelector("#alertZipCodeLength");
+        alertZipCodeLength.style.visibility="visible";
+    } else if ((!(zipCodeText.length === 4 || zipCodeText.length === 5)) && (numberCheck(zipCodeText))) {
+        zipCodeInput.classList.add("redBorder");
+        var alertZipCodeLength = document.querySelector("#alertZipCodeLength");
+        alertZipCodeLength.style.visibility="visible";
+        var alertZipCodeValid = document.querySelector("#alertZipCodeValid");
+        alertZipCodeValid.style.visibility = "visible";
+    }
+}
+
+zipCodeInput.addEventListener("focus", focusZipCodeCheck);
+
+function focusZipCodeCheck(){
+    zipCodeInput.classList.remove("redBorder");
+    var alertZipCodeLength = document.querySelector("#alertZipCodeLength");
+    alertZipCodeLength.style.visibility="hidden";
+    var alertZipCodeValid = document.querySelector("#alertZipCodeValid");
+    alertZipCodeValid.style.visibility = "hidden";
+}
+
+var emailInput = document.querySelector("#emailInput");
+
+emailInput.addEventListener("blur", blurEmailCheck);
+
+function blurEmailCheck(){
+    var val = document.querySelector("#emailInput").value;
+    var regex = /^[^@]+@[^@]+\.[a-zA-Z]{2,}$/;
+    if (!(regex.test(val))){
+        var alert = document.getElementById("alertEmail");
+        alert.style.visibility = "visible";
+        emailInput.classList.add("redBorder");
+    } else {
+        return
+    }
+}
+
+emailInput.addEventListener("focus", focusEmailCheck);
+
+function focusEmailCheck(){
+    var alert = document.getElementById("alertEmail");
+    alert.style.visibility = "hidden";
+    emailInput.classList.remove("redBorder");
+}
+
+var passwordInput = document.querySelector("#passwordInput");
+
+passwordInput.addEventListener("blur", blurPasswordCheck);
+
+function blurPasswordCheck(){
+    var passwordText = passwordInput.value;
+    if (specialCharacterCheck(passwordText)){
+        passwordInput.classList.add("redBorder");
+        var alertPasswordValid = document.querySelector("#alertPasswordValid");
+        alertPasswordValid.style.visibility = "visible";
+    } if (passwordText.length < 8) {
+        passwordInput.classList.add("redBorder");
+        var alertPasswordLength = document.querySelector("#alertPasswordLength");
+        alertPasswordLength.style.visibility = "visible";
+    } else {
+        return true;
+    }
+}
+
+passwordInput.addEventListener("focus", focusPasswordCheck);
+
+function focusPasswordCheck(){
+    var alertPasswordLength = document.getElementById("alertPasswordLength");
+    alertPasswordLength.style.visibility = "hidden";
+    var alertPasswordValid = document.getElementById("alertPasswordValid");
+    alertPasswordValid.style.visibility = "hidden";
+    passwordInput.classList.remove("redBorder");
+}
+
+
+var repeatPasswordInput = document.querySelector("#repeatPasswordInput");
+
+repeatPasswordInput.addEventListener("blur", blurRepeatPasswordCheck);
+
+function blurRepeatPasswordCheck(){
+    var repeatPasswordText = repeatPasswordInput.value;
+    var passwordText = passwordInput.value;
+    if (passwordText != repeatPasswordText){
+        repeatPasswordInput.classList.add("redBorder");
+        var alertRepeatPassword = document.querySelector("#alertRepeatPassword");
+        alertRepeatPassword.style.visibility = "visible";
+    }
+}
+
+repeatPasswordInput.addEventListener("focus", focusRepeatPasswordCheck);
+
+function focusRepeatPasswordCheck(){
+    repeatPasswordInput.classList.remove("redBorder");
+    var alertRepeatPassword = document.querySelector("#alertRepeatPassword");
+    alertRepeatPassword.style.visibility = "hidden";
+}
+
+var button = document.querySelector("#button");
+
+button.addEventListener("click", alertCheck);
+
+function alertCheck(){
+    var inputGroup = document.querySelectorAll(".inputList");
+    console.log(inputGroup[1]);
+    var labelGroup = document.querySelectorAll(".labelList");
+    console.log(inputGroup);
+    console.log(labelGroup);
+    var labelinput = ["Successfully signed up. \nHere is your information: "];
+    for (var i=0 ; i<inputGroup.length ; i++){
+        if (inputGroup[i].classList.contains("redBorder")){
+            return alert ("Please, check your values, some of them might have errors");
+        }
+        if (!inputGroup[i].classList.contains("redBorder")){
+            labelinput.push(" ");
+            labelinput.push(labelGroup[i].textContent);
+            labelinput.push(": ");
+            labelinput.push(inputGroup[i].value);
+            console.log(i);
+        }
+    }
+    if (labelinput.length > (inputGroup.length+labelGroup.length)){
+        return alert(labelinput.join(""));
+    }
 }

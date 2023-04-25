@@ -10,11 +10,11 @@ a {
 
 aside{
     width: 18.61%;
+    height: 1233px;
     background-color: #373867;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-between;
     padding-top: 3%;
     padding-bottom: 7%;
 }
@@ -77,6 +77,7 @@ main{
     justify-content: space-between;
 }
 
+
 .formDiv{
     height: 14%;
     width: 100%;
@@ -118,11 +119,19 @@ main{
 /*Estilos de escritorio*/
 
 @media(min-width: 1025px) {
+    aside {
+        height: 800px;
+    }
     form {
         display: flex;
         flex-direction: column;
         flex-wrap: wrap;
         justify-content: space-evenly;
         align-content: center;
+        width: 96.5%;
+        margin-left: 3%;
+    }
+    .formDiv{
+        width: 50%;
     }
 }
