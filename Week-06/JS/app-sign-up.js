@@ -41,6 +41,26 @@ function letterNumberFind(wordInput) {
     return false;
 }
 
+function letterFind(wordInput) {
+    var letter = "aAbBcCdDeEfFgGhHiIjJkKlLmMnNoOpPqQrRsStTuUvVwWxXyYzZ";
+    for (var i = 0; i < wordInput.length; i++) {
+        if (letter.indexOf(wordInput.charAt(i)) != -1) {
+            return true;
+        }
+    }
+    return false;
+}
+
+function numberFind(wordInput) {
+    var number = "9876543210";
+    for (var i = 0; i < wordInput.length; i++) {
+        if (number.indexOf(wordInput.charAt(i)) != -1) {
+            return true;
+        }
+    }
+    return false;
+}
+
 function spaceFind() {
     var adressText = adressInput.value;
     return adressText.indexOf(" ");
@@ -316,7 +336,7 @@ passwordInput.addEventListener("blur", blurPasswordCheck);
 
 function blurPasswordCheck(){
     var passwordText = passwordInput.value;
-    if (specialCharacterCheck(passwordText)){
+    if (!letterFind(passwordText) || !(numberFind(passwordText))){
         passwordInput.classList.add("redBorder");
         var alertPasswordValid = document.querySelector("#alertPasswordValid");
         alertPasswordValid.style.visibility = "visible";
@@ -324,10 +344,9 @@ function blurPasswordCheck(){
         passwordInput.classList.add("redBorder");
         var alertPasswordLength = document.querySelector("#alertPasswordLength");
         alertPasswordLength.style.visibility = "visible";
-    } else {
-        return true;
     }
 }
+
 
 passwordInput.addEventListener("focus", focusPasswordCheck);
 
