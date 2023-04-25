@@ -368,14 +368,27 @@ button.addEventListener("click", alertCheck);
 
 function alertCheck(){
     var inputGroup = document.querySelectorAll(".inputList");
-    console.log(inputGroup[1]);
     var labelGroup = document.querySelectorAll(".labelList");
-    console.log(inputGroup);
-    console.log(labelGroup);
+    var alertGroup = document.querySelectorAll(".errorAlert");
     var labelinput = ["Successfully signed up. \nHere is your information: "];
+    var errorList = ["Sign up was not succesful. \nPlease check the following errors: "];
+    function redBorder(input){
+        if (input.classList.contains("redBorder")){
+            return true;
+        } else {
+            return false;
+        }
+    }
+    for (var i=0 ; i<alertGroup.length ; i++){
+        if (alertGroup[i].style.visibility === "visible"){
+            errorList.push(" ");
+            errorList.push(alertGroup[i].textContent);
+            errorList.push(" ");
+        }
+    }
     for (var i=0 ; i<inputGroup.length ; i++){
-        if (inputGroup[i].classList.contains("redBorder")){
-            return alert ("Please, check your values, some of them might have errors");
+        if (redBorder(inputGroup[i])){
+            return  alert (errorList.join(""));;
         }
         if (!inputGroup[i].classList.contains("redBorder")){
             labelinput.push(" ");
