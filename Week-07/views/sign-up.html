@@ -1,105 +1,108 @@
 <!DOCTYPE html>
 
-<!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>sign-up</title>
-        <link rel="stylesheet" href="../CSS/Reset.css">
-        <link rel="stylesheet" href="../CSS/sign-up.css">
-        <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
-        <script defer src="../JS/app-sign-up.js"></script>
-    </head>
-    <body>
-        <aside>
-            <div class="logo">
-                <img src="../../Assets/Images/LOGO-RR.png" alt="RR Logo" id="logoLogo">
-                <img src="../../Assets/Images/LOGO-RR 2.png" alt="Radium Rocket" id="nameLogo">
-            </div>
-            <nav>
-                <a href="https://juanignaciosobral.github.io/BaSP-M2023/Week-06/views/login.html">LOG IN</a>
-                <a href="#">SIGN UP</a>
-                <a href="https://juanignaciosobral.github.io/BaSP-M2023/Week-06/views/index.html">HOME</a>
-            </nav>
-        </aside>
-        <div id="general">
-            <header>
-                <h1>
-                    SIGN UP
-                </h1>
-            </header>
-            <main>
-                <form action="#">
-                    <div class="formDiv">
-                        <label for="nameInput" class="labelList">Name</label>
-                        <input type="text" name="nameInput" id="nameInput" class="inputList">
-                        <p class="errorAlert" id="alertNameLength">The field "name" must contain at least 4 letters.</p>
-                        <p class="errorAlert" id="alertNameLetters">You must use only letters for your name.</p>
-                    </div>
-                    <div class="formDiv">
-                        <label for="Input" class="labelList">Surname</label>
-                        <input type="text" name="Input" id="surnameInput" class="inputList">
-                        <p class="errorAlert" id="alertSurnameLength">The field "surname" must contain at least 3 letters.</p>
-                        <p class="errorAlert" id="alertSurnameLetters">You must use only letters for your surname.</p>
-                    </div>
-                    <div class="formDiv">
-                        <label for="DNInput" class="labelList">DNI</label>
-                        <input type="text" name="DNInput" id="DNInput" class="inputList">
-                        <p class="errorAlert" id="alertDNILength">The field "DNI" must contain at least 8 numbers.</p>
-                        <p class="errorAlert" id="alertDNINumbers">The field "DNI" must contain numbers only.</p>
-                    </div>
-                    <div class="formDiv">
-                        <label for="birthInput" class="labelList">Day of birth</label>
-                        <input type="date" name="birthInput" id="birthInput" class="inputList">
-                        <p class="errorAlert" id="alertBirth">Enter a date on dd/mm/yyyy format.</p>
-                    </div>
-                    <div class="formDiv">
-                        <label for="phoneInput" class="labelList">Phone number</label>
-                        <input type="text" name="phoneInput" id="phoneInput" class="inputList">
-                        <p class="errorAlert" id="alertPhoneLength">Your phone number must contain at least 7 digits</p>
-                        <p class="errorAlert" id="alertPhoneNumbers">Your phone number must contain only numbers</p>
-                    </div>
-                    <div class="formDiv">
-                        <label for="adressInput" class="labelList">Adress</label>
-                        <input type="text" name="adressInput" id="adressInput" class="inputList">
-                        <p class="errorAlert" id="alertAdressLength">Your adress must be at least 5 characters long</p>
-                        <p class="errorAlert" id="alertAdressValid">Your adress must have your street name and your door number with a space in the middle</p>
-                    </div>
-                    <div class="formDiv">
-                        <label for="locationInput" class="labelList">Location</label>
-                        <input type="text" name="locationInput" id="locationInput" class="inputList">
-                        <p class="errorAlert" id="alertLocationLength">Your location must be at least 3 characters long</p>
-                        <p class="errorAlert" id="alertLocationValid">Please enter a valid location</p>
-                    </div>
-                    <div class="formDiv">
-                        <label for="zipCodeInput" class="labelList">Zip code</label>
-                        <input type="text" name="zipCodeInput" id="zipCodeInput" class="inputList">
-                        <p class="errorAlert" id="alertZipCodeLength">Your zipcode must be 4 or 5 characters long</p>
-                        <p class="errorAlert" id="alertZipCodeValid">Please enter only numbers</p>
-                    </div>
-                    <div class="formDiv">
-                        <label for="emailInput" class="labelList">Email</label>
-                        <input type="text" name="emailInput" id="emailInput" class="inputList">
-                        <p class="errorAlert" id="alertEmail">Please enter a valid email</p>
-                    </div>
-                    <div class="formDiv">
-                        <label for="passwordInput" class="labelList">Password</label>
-                        <input type="password" name="passwordInput" id="passwordInput" class="inputList">
-                        <p class="errorAlert" id="alertPasswordLength">Your password must be at least 8 characters long</p>
-                        <p class="errorAlert" id="alertPasswordValid">Your password must contain letters and numbers only</p>
-                    </div>
-                    <div class="formDiv">
-                        <label for="repatPasswordInput">Repeat password</label>
-                        <input type="password" name="repeatPasswordInput" id="repeatPasswordInput">
-                        <p class="errorAlert" id="alertRepeatPassword">Passwords do not match</p>
-                    </div>
-                    <div class="formDiv">
-                        <input type="submit" value="Sign up" id="button">
-                    </div>
-                </form>
-            </main>
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>sign-up</title>
+  <link rel="stylesheet" href="../CSS/Reset.css">
+  <link rel="stylesheet" href="../CSS/sign-up.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+  <script defer src="../JS/app-sign-up.js"></script>
+</head>
+
+<body>
+  <aside>
+    <div class="logo">
+      <img src="../../Assets/Images/LOGO-RR.png" alt="RR Logo" id="logoLogo">
+      <img src="../../Assets/Images/LOGO-RR 2.png" alt="Radium Rocket" id="nameLogo">
+    </div>
+    <nav>
+      <a href="https://juanignaciosobral.github.io/BaSP-M2023/Week-06/views/login.html">LOG IN</a>
+      <a href="#">SIGN UP</a>
+      <a href="https://juanignaciosobral.github.io/BaSP-M2023/Week-06/views/index.html">HOME</a>
+    </nav>
+  </aside>
+  <div id="general">
+    <header>
+      <h1>
+        SIGN UP
+      </h1>
+    </header>
+    <main>
+      <form action="#">
+        <div class="formDiv">
+          <label for="nameInput" class="labelList">Name</label>
+          <input type="text" name="nameInput" id="nameInput" class="inputList">
+          <p class="errorAlert" id="alertNameLength">The field "name" must contain at least 4 letters.</p>
+          <p class="errorAlert" id="alertNameLetters">You must use only letters for your name.</p>
         </div>
-    </body>
+        <div class="formDiv">
+          <label for="Input" class="labelList">Surname</label>
+          <input type="text" name="Input" id="surnameInput" class="inputList">
+          <p class="errorAlert" id="alertSurnameLength">The field "surname" must contain at least 3 letters.</p>
+          <p class="errorAlert" id="alertSurnameLetters">You must use only letters for your surname.</p>
+        </div>
+        <div class="formDiv">
+          <label for="DNInput" class="labelList">DNI</label>
+          <input type="text" name="DNInput" id="DNInput" class="inputList">
+          <p class="errorAlert" id="alertDNILength">The field "DNI" must contain at least 8 numbers.</p>
+          <p class="errorAlert" id="alertDNINumbers">The field "DNI" must contain numbers only.</p>
+        </div>
+        <div class="formDiv">
+          <label for="birthInput" class="labelList">Day of birth</label>
+          <input type="date" name="birthInput" id="birthInput" class="inputList">
+          <p class="errorAlert" id="alertBirth">Enter a date on mm/dd/yyyy format.</p>
+        </div>
+        <div class="formDiv">
+          <label for="phoneInput" class="labelList">Phone number</label>
+          <input type="text" name="phoneInput" id="phoneInput" class="inputList">
+          <p class="errorAlert" id="alertPhoneLength">Your phone number must contain at least 7 digits</p>
+          <p class="errorAlert" id="alertPhoneNumbers">Your phone number must contain only numbers</p>
+        </div>
+        <div class="formDiv">
+          <label for="adressInput" class="labelList">Adress</label>
+          <input type="text" name="adressInput" id="adressInput" class="inputList">
+          <p class="errorAlert" id="alertAdressLength">Your adress must be at least 5 characters long</p>
+          <p class="errorAlert" id="alertAdressValid">Your adress must have your street name and your door number with a
+            space in the middle</p>
+        </div>
+        <div class="formDiv">
+          <label for="locationInput" class="labelList">Location</label>
+          <input type="text" name="locationInput" id="locationInput" class="inputList">
+          <p class="errorAlert" id="alertLocationLength">Your location must be at least 3 characters long</p>
+          <p class="errorAlert" id="alertLocationValid">Please enter a valid location</p>
+        </div>
+        <div class="formDiv">
+          <label for="zipCodeInput" class="labelList">Zip code</label>
+          <input type="text" name="zipCodeInput" id="zipCodeInput" class="inputList">
+          <p class="errorAlert" id="alertZipCodeLength">Your zipcode must be 4 or 5 characters long</p>
+          <p class="errorAlert" id="alertZipCodeValid">Please enter only numbers</p>
+        </div>
+        <div class="formDiv">
+          <label for="emailInput" class="labelList">Email</label>
+          <input type="text" name="emailInput" id="emailInput" class="inputList">
+          <p class="errorAlert" id="alertEmail">Please enter a valid email</p>
+        </div>
+        <div class="formDiv">
+          <label for="passwordInput" class="labelList">Password</label>
+          <input type="password" name="passwordInput" id="passwordInput" class="inputList">
+          <p class="errorAlert" id="alertPasswordLength">Your password must be at least 8 characters long</p>
+          <p class="errorAlert" id="alertPasswordValid">Your password must contain letters and numbers only</p>
+        </div>
+        <div class="formDiv">
+          <label for="repatPasswordInput">Repeat password</label>
+          <input type="password" name="repeatPasswordInput" id="repeatPasswordInput">
+          <p class="errorAlert" id="alertRepeatPassword">Passwords do not match</p>
+        </div>
+        <div class="formDiv">
+          <input type="submit" value="Sign up" id="button">
+        </div>
+      </form>
+    </main>
+  </div>
+</body>
+
 </html>

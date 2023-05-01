@@ -92,7 +92,7 @@ function elFetch (url) {
         })
         .then(function (data){
             if(typeof(data.msg) != "undefined" && data.success == false){
-                throw new Error(data.msg);
+                throw new Error (data.msg);
             } else if(data.success ==false){
                 var errorGroup = "";
                 for(var i=0; i<data.errors.length; i++){
@@ -114,25 +114,22 @@ function elFetch (url) {
 function loginClick (){
     var url = "https://api-rest-server.vercel.app/login?email="+emailInput.value+"&password="+passwordInput.value;
     elFetch(url);
-    // var emailText = document.querySelector("#emailInput").value;
-    // var regexEmail = /^[^@]+@[^@]+\.[a-zA-Z]{2,}$/;
-    // var passwordText = document.getElementById("passwordInput").value;
-    // var regexPassword = /^[A-Za-z0-9]*$/;
-    // if ((regexEmail.test(emailText))&&(regexPassword.test(passwordText)&&(passwordText !== ""))){
-    //     alert("Successfully loged in with "+emailText+" as email and "+passwordText+" as password.");
-    // } else if (((passwordText === "")||(!(regexPassword.test(passwordText))))&&((regexEmail.test(emailText))&&(!(emailText === "")))) {
-    //     alert("Please, enter a valid password.");
-    // } else if (((passwordText !== "")&&(regexPassword.test(passwordText)))&&(!(regexEmail.test(emailText))||(emailText === ""))){
-    //     alert ("Please, enter a valid email.");
-    // } else if(((passwordText === "")||(!(regexPassword.test(passwordText))))&&(!(regexEmail.test(emailText))||(emailText === ""))){
-    //     alert("Please enter a valid email and password");
-    // }
+    var emailText = document.querySelector("#emailInput").value;
+    var regexEmail = /^[^@]+@[^@]+\.[a-zA-Z]{2,}$/;
+    var passwordText = document.getElementById("passwordInput").value;
+    var regexPassword = /^[A-Za-z0-9]*$/;
+    if ((regexEmail.test(emailText))&&(regexPassword.test(passwordText)&&(passwordText !== ""))){
+        alert("Successfully loged in with "+emailText+" as email and "+passwordText+" as password.");
+    } else if (((passwordText === "")||(!(regexPassword.test(passwordText))))&&((regexEmail.test(emailText))&&(!(emailText === "")))) {
+        alert("Please, enter a valid password.");
+    } else if (((passwordText !== "")&&(regexPassword.test(passwordText)))&&(!(regexEmail.test(emailText))||(emailText === ""))){
+        alert ("Please, enter a valid email.");
+    } else if(((passwordText === "")||(!(regexPassword.test(passwordText))))&&(!(regexEmail.test(emailText))||(emailText === ""))){
+        alert("Please enter a valid email and password");
+    }
 }
 
 button.addEventListener("click", function(e){
     e.preventDefault();
     loginClick();
 });
-
-
-
