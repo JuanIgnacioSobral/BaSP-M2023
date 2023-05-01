@@ -24,9 +24,6 @@ function numberFind(wordInput) {
 
 
 
-
-
-
 var emailInput = document.querySelector("#emailInput");
 
 function blurEmailCheck(){
@@ -127,6 +124,10 @@ function loginClick (){
     } else if(((passwordText === "")||(!(regexPassword.test(passwordText))))&&(!(regexEmail.test(emailText))||(emailText === ""))){
         alert("Please enter a valid email and password");
     }
+    var emailLabel = document.querySelector("#emailLabel");
+    var passwordLabel = document.querySelector("#passwordLabel");
+    localStorage.setItem(emailLabel.textContent, emailInput.value);
+    localStorage.setItem(passwordLabel.textContent, passwordInput.value);
 }
 
 button.addEventListener("click", function(e){
