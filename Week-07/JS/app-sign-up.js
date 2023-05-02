@@ -406,6 +406,14 @@ function elFetch(url) {
         }
         throw new Error(errorGroup);
       } else {
+        localStorage.setItem("nameInput", nameInput.value);
+        localStorage.setItem("surnameInput", surnameInput.value);
+        localStorage.setItem("DNInput", DNInput.value);
+        localStorage.setItem("birthInput", birthInput.value);
+        localStorage.setItem("phoneInput", phoneInput.value);
+        localStorage.setItem("zipCodeInput", zipCodeInput.value);
+        localStorage.setItem("emailInpu", emailInput.value);
+        localStorage.setItem("passwordInput", passwordInput.value);
         alert(data.msg);
       }
       return data;
