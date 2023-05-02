@@ -9,6 +9,7 @@ On the present [repository](https://juanignaciosobral.github.io/BaSP-M2023/) we 
 - Week-04
 - Week-05
 - Week-06
+- Week-07
 - Assets
 - CSS
 
@@ -35,6 +36,10 @@ This folder contains it's weekly [index.html](https://juanignaciosobral.github.i
 
 This folder provides much more content than previous weeks. Inside Week-06 there are three other folders, which are called, views, CSS and JS. The CSS folder, as it's name sugests, has all the .css files used on this weeks assignment. The folder JS follows the same pattern as the prevous one, containing all the Javascript files, used this week. Last, but not least, the views folder contains three HTML files that show the [landing](https://juanignaciosobral.github.io/BaSP-M2023/Week-06/views/index.html), [log in](https://juanignaciosobral.github.io/BaSP-M2023/Week-06/views/login.html) and [sign up](https://juanignaciosobral.github.io/BaSP-M2023/Week-06/views/sign-up.html) pages for our weekly assignment. As you might have imagined this week's main assignment was to link our different HTML pages, as well as to provide coherent CSS and Javascript for the three of them.
 
+## Week-07
+
+This folder includes the same structure as last week. However, the Javascript files now send the data to an API in order to either validate the said send data, or to recieve the corresponding error message. In similar fashion to last week we will find HTML files for the [landing](https://juanignaciosobral.github.io/BaSP-M2023/Week-07/views/index.html), [log in](https://juanignaciosobral.github.io/BaSP-M2023/Week-07/views/login.html) and [sign up](https://juanignaciosobral.github.io/BaSP-M2023/Week-07/views/sign-up.html) pages in the views folder.
+
 ## Assets
 
 This folder currently contains another folder named images, which at the same time contains multiple images used on the making of every weekly assignment.
@@ -45,4 +50,4 @@ From week 4 onwards, each weekly folder will contain a CSS folder, which will al
 
 ## Future releases
 
-On future releases we will incorporate some server-user content as well as working with peers via GitHub.
+On future releases we will incorporate some more server-user content as well as working with peers via GitHub.
